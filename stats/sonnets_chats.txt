@@ -1,0 +1,25 @@
+Emilys-MacBook-Air:stats-chats emilyyu415$ python3 chats.py < sonnets.txt 
+READING text from STDIN. Hit ctrl-d when done entering text.
+DONE.
+ but at my mistress'
+ thrall came
+ there for cure
+ and this by
+ that i prove
+ love's fire
+ heats water
+ water cools
+ not love. cxviii
+ . like as to
+ prevent our
+ maladies unseen
+ we sicken to
+ shun the heaven
+ that leads
+ men to this
+ false plague
+ are they now
+ transferr'd
+ .
+
+Emilys-MacBook-Air:stats-chats emilyyu415$ 
