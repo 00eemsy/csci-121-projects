@@ -186,13 +186,25 @@ while playing and player.alive:
                 print("overseer: um... this is awkward. you don't have the right to inspect that.")
         elif commandWords[0].lower() == "drop":
             count = 0
-            tally = 0
+            tally = []
+            item_to_drop = ""
+
+            temp_count = 1
+            while temp_count < len(commandWords):
+                if temp_count == len(commandWords) - 1:
+                    item_to_drop += commandWords[temp_count]
+                else:
+                    item_to_drop += commandWords[temp_count] + " "
+                temp_count += 1
+
+
             while count < len(player.items):
-                if player.items[count].name == commandWords[1]:
-                    tally = count
+                if player.items[count].name == item_to_drop:
+                    tally.append(count)
                 count += 1
-            player.location.addItem(player.items[tally])
-            del player.items[tally]
+
+            player.location.addItem(player.items[tally[0]])
+            del player.items[tally[0]]
             timePasses = True
         elif commandWords[0].lower() == "heal":
             item = commandWords[1]
@@ -263,21 +275,26 @@ while playing and player.alive:
             count = 0
 
             while count < len(player.items):
-                if player.items[count].name == "canned tuna":
+                if player.items[count].name == "can of tuna":
                     tunaTally = True
                     tunaCount = count
-                elif player.items[count].name == "duct tape":
+                if player.items[count].name == "duct tape":
                     tapeTally = True
-                    if tunaCount == 0:
-                        tapeCount = count
-                    if tunaCount < tapeCount:
-                        tapeCount = count - 1
-                    else:
-                        tapeCount = count 
+                    tapeCount = count 
                 count += 1
             
+            print("tunaTally: " + str(tunaTally))
+            print("tunaCount: " + str(tunaCount))
+            print("tapeTally: " + str(tapeTally))
+            print("tapeCount: " + str(tapeCount))
+
+
             if tunaTally and tapeTally:
                 del player.items[tunaCount]
+
+                if tapeCount > tunaCount:
+                    tapeCount -= 1
+
                 del player.items[tapeCount]
             
                 ultArmor = Item("ULTIMATE ARMOR", "overseer: the most op armor in game. it reeks of tuna though...", 0)
@@ -286,7 +303,7 @@ while playing and player.alive:
                 timePasses = True
 
         else:
-            print("overseer: what sort of witchcraft are u trying to do, huh? that command doesn't exist.")
+            print("overseer: what sort of witchcraft are u trying to do, huh? what do you think you're capable of making anyways?")
             commandSuccess = False
     
     if timePasses == True:
