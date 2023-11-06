@@ -24,37 +24,6 @@ class Player:
             print()
             input("Press enter to continue...")
     def showInventory(self):
-        # item stacking
-        count = 0
-        while count < len(self.items):
-            toAddTo = []
-            toDelete = []
-            tallyList = []
-            tally = 1
-            count1 = 0
-            
-            while count1 < len(self.items):
-                if self.items[count].name == self.items[count1].name and count != count1:
-                    toAddTo.append(count)
-                    toDelete.append(count1)
-                    tally += 1
-                count1 += 1
-            
-            if tally > 1:
-                tallyList.append(tally)
-            
-            count += 1
-
-        count = 0
-        if len(toAddTo) > 0:
-            while count < len(toAddTo):
-                self.items[toAddTo[count]].name += " (x" + str(tallyList[count]) + ")"
-                del self.items[toDelete[count]]
-                for i in toDelete:
-                    i -= 1
-                for i in toAddTo:
-                    i -= 1
-                count += 1
         clear()
         print("ur stuff rn:")
         print()
@@ -73,7 +42,6 @@ class Player:
         print("overseer: let's kick " + mon.name + "'s butt.")
         print()
         
-        message = "overseer: oh, and ur health rn is " + str(self.health) + "."
         scytheDamage = 10
         sickleDamage = 5
         armorPoints = 0
@@ -91,6 +59,11 @@ class Player:
                 ultArmorExists = True
             if i.name == "edgy black cloak":
                 armorPoints = 5
+
+        message = "overseer: oh, ur health rn is " + str(self.health) + "."
+
+        if armorPoints > 0:
+            message += " and you have a +" + str(armorPoints) + " armor buff. slay ig."
 
         if sickleExists and scytheExists:
             attackDamage = scytheDamage
