@@ -2,11 +2,11 @@
 > welcome to `grimterm 💀`, a text-based adventure game that merges the deathly with the corporate (and the nihilist)! in grimterm, you play as the grimterm (a grim-reaper-in-training intern), going around collecting both souls and eulogies, fighting off evil soul snatcher, exploring both the over- and underworld, and praying for a promotion.
 
 ![Opening Screen of Grimterm](./visuals/opening-still)
-⬆️ opening still of grimterm game
+⬆️ opening still of `grimterm`
 
 ## 💡 INSTRUCTIONS 
 ![Help Screen of Grimtern](./visuals/help)
-⬆️ **help** command of grimterm game
+⬆️ **help** command of `grimterm`
 
 ### other details 🌟
 * **the victory condition**: collecting all 5 souls, killing the final boss, agreeing to a promotion offer from the "GRIM REAPER"
