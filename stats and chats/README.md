@@ -1,5 +1,5 @@
 ## 👩🏻‍💻 DESCRIPTION
-> welcome to `stats and chats 🔍`, a text-analysis and generative text program. this project comes in two parts: `stats.py` and `chats.py`.
+> welcome to `stats and chats 📊`, a text-analysis and generative text program. this project comes in two parts: `stats.py` and `chats.py`.
 
 > `stats.py`: takes a text and analyzes its contiguous runs of alphabet characters and treating them as words. these "words" are analyzed and returned as a statistical report.
 this report includes:
