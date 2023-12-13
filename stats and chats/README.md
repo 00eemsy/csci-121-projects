@@ -1,7 +1,7 @@
 ## 👩🏻‍💻 DESCRIPTION
 > welcome to `stats and chats 📊`, a text-analysis and generative text program. this project comes in two parts: `stats.py` and `chats.py`.
 
-> `stats.py`: takes a text and analyzes its contiguous runs of alphabet characters and treating them as words. these "words" are analyzed and returned as a statistical report.
+> `stats.py`: takes a text and examines its contiguous runs of alphabet characters (or "words"). these "words" are analyzed and returned as a statistical report.
 this report includes:
 * the word count of the text file
 * the number of distinct words
@@ -12,7 +12,7 @@ this report includes:
 ⬆️ an example of `stats.py`'s output using `mlk.txt`
 <br>
 <br>
-> `chats.py`: takes a text and analyzes it for "bi-grams" and "tri-grams"-- or strings of words that occur in 2s or in 3s. a dictionary is made for each word storing that words' bi-grams and tri-grams. using this dictionary, an unique text is stochastically generated.
+> `chats.py`: takes a text and analyzes it for "bi-grams" and "tri-grams"-- or strings of words that occur in 2s or 3s. a dictionary is then made for each word storing that words' bi-grams and tri-grams. using this dictionary, a unique text is stochastically generated.
 
 ![](./visuals/mlk-chats)
 ⬆️ an example of `chats.py`'s output using `mlk.txt`
