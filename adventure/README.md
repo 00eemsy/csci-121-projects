@@ -1,5 +1,5 @@
 ## 👩🏻‍💻 DESCRIPTION
-> welcome to `grimterm 💀`, a text-based adventure game that merges the deathly with the corporate (and the nihilist)! in grimterm, you play as the grimterm (a grim-reaper-in-training intern), going around collecting both souls and eulogies, fighting off evil soul snatcher, exploring both the over- and underworld, and praying for a promotion.
+> welcome to `grimterm 💀`, a text-based adventure game that merges the deathly with the corporate (and the nihilist)! in grimterm, you play as a grimterm (a grim-reaper-in-training/intern), going around collecting both souls and eulogies, fighting off evil soul snatchers, exploring both the over- and underworld, and praying for a promotion.
 
 ![Opening Screen of Grimterm](./visuals/opening-still)
 ⬆️ opening still of `grimterm`
