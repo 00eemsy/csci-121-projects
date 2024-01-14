@@ -5,7 +5,7 @@ Welcome to `grimterm 💀`, a text-based adventure game that merges the deathly 
 ![Opening Screen of Grimterm](./visuals/opening-still.png)
 
 ## 💡 INSTRUCTIONS 
-⬇️ **help** command of `grimterm`
+⬇️ `help` command of `grimterm`
 ![Help Screen of Grimtern](./visuals/help.png)
 
 ### Other Details 🌟
