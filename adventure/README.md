@@ -36,7 +36,7 @@ python3 main.py
 
 ## 🎮 DEMOS 
 
-_Picking up and dropping items_
+_Picking up and dropping items:_
 ![](./visuals/pickup.gif)
 
 _Attacking soul snatchers:_
